@@ -1,0 +1,49 @@
+@model IEnumerable<MVCA.Models.timesheet>
+@{
+    ViewBag.Title = "index";
+}
+
+<table >
+    <tr >
+        <th >id</th> 
+        <th>task</th>
+        <th>time</th>
+        <th>personname</th>
+
+        </tr>
+
+   
+        <tr>
+            <td>
+                <div id="divid" class="visible">1</div>
+            </td>
+           
+            <td>
+                <div id="divtask" class="visible"></div>
+               
+                <input id="txttask" type="text" class="hide" >
+                    
+            </td>
+               
+            <td>
+                <div id="divtime" class="visible"></div>
+                <input id="txttime" type="text" class="hide" >
+            </td>
+            <td>
+                <div id="divpersonname" class="visible"></div>
+                <input id="txtpersonname" type="text" class="hide" >
+                    </td>
+            <td>
+                <button id="btnSave" class="visible">Save</button>
+                
+            </td>
+        </tr>
+   
+
+    </table>
+<div>
+    @Html.ActionLink("Return to Home page", "Index", "Home")
+</div>
+
+
+

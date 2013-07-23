@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace MVCA.Controllers
 {
-    public class timesheetController : Controller
+    public class TimesheetController : Controller
     {
         //
         // GET: /timesheet/
@@ -15,7 +15,7 @@ namespace MVCA.Controllers
     
         public ActionResult Index()
         {
-            using (var db = new timesheet1())
+            using (var db = new Timesheet1())
             {
                 return View(db.entry.ToList());
             }
@@ -24,11 +24,11 @@ namespace MVCA.Controllers
            
         }
         [HttpPost]
-        public ActionResult add(timesheet sheet)
+        public ActionResult add(Timesheet sheet)
         {
             try
      {
-         using (var db = new timesheet1())
+         using (var db = new Timesheet1())
          {
              db.entry.Add(sheet);
               db.SaveChanges();

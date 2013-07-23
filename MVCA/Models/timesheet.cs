@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace MVCA.Models
 {
-    public class timesheet
+    public class Timesheet
     {
         [Required]
         [Display(Name = "id")]

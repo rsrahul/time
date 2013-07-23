@@ -12,9 +12,9 @@ using System.Data.Entity;
 
 namespace MVCA.Models
 {
-    public class timesheet1: DbContext
+    public class Timesheet1: DbContext
     {
-        public DbSet<timesheet > entry { get; set; }
+        public DbSet<Timesheet> entry { get; set; }
         //private timesheetEntities tms = new timesheet();
        // DefaultConnection con = new DefaultConnection();
         //public void Add(timesheet  sheet)

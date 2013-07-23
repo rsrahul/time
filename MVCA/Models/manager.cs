@@ -6,16 +6,19 @@ using MVCA.DB;
 using MVCA.Models;
 using System.Data.SqlClient;
 using System.Configuration;
+using MVCA;
+using System.Data.Entity;
 
 
 namespace MVCA.Models
 {
-    public class manager
+    public class manager: DbContext
     {
+        public DbSet<timesheet > timeentry { get; set; }
         //private timesheetEntities tms = new timesheet();
-
-        public void Add(timesheet  sheet)
-        {
+       // DefaultConnection con = new DefaultConnection();
+        //public void Add(timesheet  sheet)
+       // {
             //string sql = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
             //SqlConnection  connObj=new SqlConnection ();
            
@@ -42,7 +45,7 @@ namespace MVCA.Models
 
             //tms.AddToSysUsers(sysUser);
            // tms.SaveChanges();
-        }
+        //}
 
         
     }

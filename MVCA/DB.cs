@@ -22,7 +22,7 @@ namespace MVCA
         {
             //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>(); 
 
-            modelBuilder.Configurations.Add(new timeConfig());
+           // modelBuilder.Configurations.Add(new timeConfig());
         }
     }
 }

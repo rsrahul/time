@@ -3,6 +3,8 @@
     ViewBag.Title = "index";
 }
 
+@using (Html.BeginForm())
+{
 <table >
     <tr >
         <th >id</th> 
@@ -34,7 +36,9 @@
                 <input id="txtpersonname" type="text" class="hide" >
                     </td>
             <td>
-                <button id="btnSave" class="visible">Save</button>
+                <div class="form-actions no-color">
+                    <input type="submit" value="submit" class="btn" />
+                </div>
                 
             </td>
         </tr>
@@ -44,6 +48,6 @@
 <div>
     @Html.ActionLink("Return to Home page", "Index", "Home")
 </div>
-
+}
 
 

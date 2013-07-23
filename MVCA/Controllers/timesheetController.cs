@@ -24,7 +24,7 @@ namespace MVCA.Controllers
            
         }
         [HttpPost]
-        public ActionResult add(timesheet1 sheet)
+        public ActionResult add(timesheet sheet)
         {
             try
      {

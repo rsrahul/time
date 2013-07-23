@@ -17,7 +17,7 @@ namespace MVCA
             : base("name=DefaultConnection")
         {
         }
-        public DbSet<timesheet> timeentry { get; set; }
+        public DbSet<timesheet1> timeentry { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>(); 

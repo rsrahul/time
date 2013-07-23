@@ -15,7 +15,7 @@ namespace MVCA.Controllers
     
         public ActionResult Index()
         {
-            using (var db = new timesheet())
+            using (var db = new timesheet1())
             {
                 return View(db.entry.ToList());
             }
@@ -24,11 +24,11 @@ namespace MVCA.Controllers
            
         }
         [HttpPost]
-        public ActionResult add(timesheet sheet)
+        public ActionResult add(timesheet1 sheet)
         {
             try
      {
-         using (var db = new timesheet())
+         using (var db = new timesheet1())
          {
              db.entry.Add(sheet);
               db.SaveChanges();

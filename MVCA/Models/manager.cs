@@ -12,7 +12,7 @@ using System.Data.Entity;
 
 namespace MVCA.Models
 {
-    public class timesheet: DbContext
+    public class timesheet1: DbContext
     {
         public DbSet<timesheet > entry { get; set; }
         //private timesheetEntities tms = new timesheet();

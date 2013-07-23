@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using MVCA.DB;
+
 using MVCA.Models;
 using System.Data.SqlClient;
 using System.Configuration;
@@ -12,9 +12,9 @@ using System.Data.Entity;
 
 namespace MVCA.Models
 {
-    public class manager: DbContext
+    public class timesheet: DbContext
     {
-        public DbSet<timesheet > timeentry { get; set; }
+        public DbSet<timesheet > entry { get; set; }
         //private timesheetEntities tms = new timesheet();
        // DefaultConnection con = new DefaultConnection();
         //public void Add(timesheet  sheet)

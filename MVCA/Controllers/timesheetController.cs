@@ -15,9 +15,9 @@ namespace MVCA.Controllers
     
         public ActionResult Index()
         {
-            using (var db = new manager ())
+            using (var db = new timesheet())
             {
-                return View(db.timeentry.ToList());
+                return View(db.entry.ToList());
             }
 
             //return View();
@@ -28,9 +28,9 @@ namespace MVCA.Controllers
         {
             try
      {
-         using (var db = new manager())
+         using (var db = new timesheet())
          {
-              db.timeentry.Add(sheet );
+             db.entry.Add(sheet);
               db.SaveChanges();
          }
          return RedirectToAction("Index");
